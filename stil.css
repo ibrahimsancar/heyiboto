@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Grandstander';
+  src: url('font/Grandstander.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lexend';
+  src: url('font/Lexend.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  --turuncu: #FF5A1F;
+  --krem: #F6E7D2;
+  --siyah: #141414;
+  --soluk: #6B5F50;
+  --cizgi: #D9CDB9;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--krem);
+  color: var(--siyah);
+  font: 400 17px/1.65 'Lexend', system-ui, sans-serif;
+}
+
+header {
+  background: var(--turuncu);
+  border-bottom: 3px solid var(--siyah);
+}
+
+.ust {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 20px 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.ust img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 3px solid var(--siyah);
+}
+
+.ust a {
+  font: 900 30px/1.2 'Grandstander', sans-serif;
+  color: #fff;
+  text-shadow: .045em .045em 0 var(--siyah);
+  text-decoration: none;
+}
+
+main {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 36px 16px 48px;
+}
+
+h1 {
+  font: 900 34px/1.3 'Grandstander', sans-serif;
+  margin: 0 0 8px;
+}
+
+h2 {
+  font: 700 20px/1.4 'Lexend', sans-serif;
+  margin: 32px 0 6px;
+}
+
+.tarih { color: var(--soluk); font-size: 14px; margin: 0 0 24px; }
+
+a { color: var(--siyah); text-decoration-color: var(--turuncu); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+
+ul { padding-left: 20px; }
+
+hr { border: 0; border-top: 2px solid var(--cizgi); margin: 40px 0; }
+
+.kod {
+  margin: 20px 0;
+  padding: 16px;
+  background: #fff;
+  border: 3px solid var(--siyah);
+  font: 500 14px/1.5 ui-monospace, Consolas, monospace;
+  word-break: break-all;
+  user-select: all;
+}
+
+button {
+  font: 700 17px 'Lexend', sans-serif;
+  padding: 12px 22px;
+  background: var(--turuncu);
+  color: #fff;
+  text-shadow: .05em .05em 0 var(--siyah);
+  border: 3px solid var(--siyah);
+  box-shadow: 4px 4px 0 var(--siyah);
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+button:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--siyah); }
+
+footer {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 16px 40px;
+  font-size: 14px;
+  color: var(--soluk);
+}
+
+footer a { color: var(--soluk); margin-right: 16px; }
